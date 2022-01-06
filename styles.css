@@ -1,0 +1,68 @@
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+:root {
+  --a-card-width: 30%;
+  --a-card-height: 
+  calc(var(--a-card-width)*.5625));
+  --image-height: 66%;
+}
+body {
+  box-sizing: border-box;
+  padding: 5px;
+  background: none;
+  border: solid 1px black;
+}
+.header{
+  height: 400px;
+  background: pink;
+}
+.footer{
+  height: 400px;
+  background: pink;
+}
+.container{
+  border: solid 1px green;
+  padding: 3px;
+  display: flex;
+  gap: 1%;
+}
+
+
+
+/* ACCOMMODATION START */
+.a-header{
+  width: 100%;
+}
+.accommodations{
+  border: solid 1px blue;
+  flex: 1 1 60%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.a-card{
+  width: var(--a-card-width);
+  height: var(--a-card-height);
+  display: flex;
+  flex-direction: column;
+}
+.bannar-img{
+  object-fit: contain;
+  height: var(--image-height); 
+}
+.img{
+  width: 100%;
+  height: 100%;
+}
+/* ACCOMMODATION END */
+/* MOST POPULAR START */
+.most-popular{
+  border:solid 1px blue;
+  flex: 1 1 30%
+}
+
+/* MOST POPULAR END */
