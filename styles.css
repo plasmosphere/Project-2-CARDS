@@ -2,14 +2,10 @@
 * {
   margin: 0;
   padding: 0;
+  
 
 }
-:root {
-  --a-card-width: 30%;
-  --a-card-height: 
-  calc(var(--a-card-width)*.5625));
-  --image-height: 66%;
-}
+
 body {
   box-sizing: border-box;
   padding: 5px;
@@ -31,13 +27,24 @@ body {
   gap: 1%;
 }
 
-
+:root {
+   --radius: 15px;
+   --blue: #0065FC;
+   --lightblue: #DEEBFF;
+   --grey: #F2F2F2;
+   
+}
 
 /* ACCOMMODATION START */
 .a-header{
-  width: 100%;
+  border: solid 1px pink;
+  margin: 2% 0;
+  width: 96%;
+  
 }
 .accommodations{
+  padding: 0;
+  background: var(--grey);
   border: solid 1px blue;
   flex: 1 1 60%;
   display: flex;
@@ -45,20 +52,32 @@ body {
   justify-content: space-around;
 }
 .a-card{
-  width: var(--a-card-width);
-  height: var(--a-card-height);
+  width: 30%;
+  
+  background: white; 
+  margin-bottom: 20px;  
+  padding: 3px;   
   display: flex;
   flex-direction: column;
+  border-radius: var(--radius);
+   
 }
 .bannar-img{
-  object-fit: contain;
-  height: var(--image-height); 
+  object-fit: contain; 
 }
 .img{
-  width: 100%;
-  height: 100%;
+  width:  100%;
+  height: auto;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.show-more{
+  border: solid 1px pink;
+  margin: 2% 0 ;
+  width: 96%; 
 }
 /* ACCOMMODATION END */
+
 /* MOST POPULAR START */
 .most-popular{
   border:solid 1px blue;
